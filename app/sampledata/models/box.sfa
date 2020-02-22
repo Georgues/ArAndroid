@@ -5,10 +5,11 @@
       parameters: [
         {
           baseColor: [
-            0.84313700000000003,
-            0.72548999999999997,
-            0.49803900000000001,
-            1,
+                      0.50196099999999999,
+                      0.81568600000000002,
+                      0.57647099999999996,
+                      1,
+
           ],
         },
         {
@@ -21,10 +22,10 @@
           interpolatedColor: null,
         },
         {
-          metallic: 0,
+          metallic: 1.0,
         },
         {
-          metallicMap: null,
+          metallicMap: 1.0,
         },
         {
           roughness: 0,
@@ -43,10 +44,11 @@
       parameters: [
         {
           baseColor: [
-            0.50196099999999999,
-            0.81568600000000002,
-            0.57647099999999996,
-            1,
+                      0.84313700000000003,
+                      0.72548999999999997,
+                      0.49803900000000001,
+                      1,
+
           ],
         },
         {
@@ -71,7 +73,7 @@
           roughnessMap: null,
         },
         {
-          opacity: null,
+          opacity: 1.0,
         },
       ],
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
@@ -97,10 +99,10 @@
           interpolatedColor: null,
         },
         {
-          metallic: 0,
+          metallic: 1.0,
         },
         {
-          metallicMap: null,
+          metallicMap: 1.0,
         },
         {
           roughness: 0,

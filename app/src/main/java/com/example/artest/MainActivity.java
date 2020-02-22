@@ -10,6 +10,8 @@ import com.google.ar.core.Anchor;
 import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
 import com.google.ar.sceneform.AnchorNode;
+import com.google.ar.sceneform.rendering.Material;
+import com.google.ar.sceneform.rendering.MaterialFactory;
 import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
@@ -63,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
         TransformableNode box = new TransformableNode(arFragment.getTransformationSystem());
         box.setParent(anchorNode);
         box.setRenderable(boxRenderable);
+//        Material material = boxRenderable.getMaterial();
+//        material.setFloat(MaterialFactory.MATERIAL_METALLIC, 1 );
         box.select();
-
-
 
     }
 }
