@@ -75,6 +75,12 @@
         {
           opacity: 1.0,
         },
+        {
+          emissiveFactor: 0.5,
+        },
+        {
+          reflectance: 0.5,
+        },
       ],
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
     },
