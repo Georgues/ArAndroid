@@ -67,10 +67,10 @@
           metallicMap: null,
         },
         {
-          roughness: 0,
+          roughness: 0.2,
         },
         {
-          roughnessMap: null,
+          roughnessMap: 1.0,
         },
         {
           opacity: 1.0,
