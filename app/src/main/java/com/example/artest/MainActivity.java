@@ -10,6 +10,7 @@ import com.google.ar.core.Anchor;
 import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
 import com.google.ar.sceneform.AnchorNode;
+import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.Material;
 import com.google.ar.sceneform.rendering.MaterialFactory;
 import com.google.ar.sceneform.rendering.ModelRenderable;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArFragment arFragment;
     private ModelRenderable boxRenderable;
+
 
 
     @Override
@@ -63,10 +65,9 @@ public class MainActivity extends AppCompatActivity {
     private void createModel(AnchorNode anchorNode) {
 
         TransformableNode box = new TransformableNode(arFragment.getTransformationSystem());
+        box.getScaleController().setMaxScale(20.0f);
         box.setParent(anchorNode);
         box.setRenderable(boxRenderable);
-//        Material material = boxRenderable.getMaterial();
-//        material.setFloat(MaterialFactory.MATERIAL_METALLIC, 1 );
         box.select();
 
     }
